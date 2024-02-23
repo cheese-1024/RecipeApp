@@ -81,7 +81,6 @@ fun RecipeCard(recipe: Recipe) {
                         .fillMaxWidth()
                         .height(200.dp)
                         .clip(shape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp)),
-
                     contentScale = ContentScale.Crop
                 )
                 Box(
