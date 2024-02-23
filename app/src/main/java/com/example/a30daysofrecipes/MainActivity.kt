@@ -34,7 +34,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.a30daysofrecipes.data.Recipe
@@ -67,7 +66,7 @@ fun RecipeCard(recipe: Recipe) {
         ),
         modifier = Modifier
             .fillMaxWidth()
-            .height(350.dp)
+            .height(316.dp)
             .padding(8.dp)
     ) {
         Column(
@@ -107,13 +106,13 @@ fun RecipeCard(recipe: Recipe) {
                 color = MaterialTheme.colorScheme.tertiary,
                 style = MaterialTheme.typography.displayLarge,
                 modifier = Modifier
-                    .padding(start = 8.dp)
+                    .padding(start = 12.dp, top = 8.dp)
             )
 
             OpenUrlButton(
                 stringResource(id = recipe.urlRes),
                 modifier = Modifier
-                    .offset(x = 8.dp)
+                    .offset(x = 12.dp, y = 8.dp)
             )
         }
     }
